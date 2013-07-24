@@ -1,0 +1,44 @@
+[user]
+  name = Jason Smale
+  email = jsmale@zendesk.com
+[push]
+  default = matching
+
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+  excludesfile = /opt/boxen/config/git/gitignore
+  editor = vim
+
+[hub]
+  protocol = https
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[alias]
+  c = commit -m
+  a = add
+  di = diff
+  dic = diff --cached
+  pl = pull
+  ps = push
+  plre = pull --rebase
+  st = status
+  out = log origin..HEAD
+  st = status
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  b = branch
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  ign = ls-files -o -i --exclude-standard
+[branch]
+	autosetuprebase = always
