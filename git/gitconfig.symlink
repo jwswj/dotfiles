@@ -15,10 +15,10 @@
   protocol = https
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
 
 [alias]
   c = commit -m
@@ -41,4 +41,10 @@
   ls = ls-files
   ign = ls-files -o -i --exclude-standard
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
