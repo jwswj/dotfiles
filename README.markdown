@@ -1,4 +1,6 @@
-# holman does dotfiles
+# jwswj does dotfiles
+
+(the holman way)
 
 ## dotfiles
 
