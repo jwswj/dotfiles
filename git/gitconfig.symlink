@@ -1,14 +1,15 @@
 [user]
   name = Jason Smale
   email = jsmale@zendesk.com
+
 [push]
-  default = matching
+  default = upstream
 
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
-  excludesfile = /opt/boxen/config/git/gitignore
+  excludesfile = ~/.gitignore
   editor = vim
 
 [hub]
@@ -40,6 +41,15 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
   ign = ls-files -o -i --exclude-standard
+  delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
 
 [branch]
   autosetuprebase = always
+
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
