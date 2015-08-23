@@ -1,2 +1,8 @@
 syntax on
 filetype indent plugin on
+set hlsearch
+set nocp
+set autoindent
+set eol
+set number
+
