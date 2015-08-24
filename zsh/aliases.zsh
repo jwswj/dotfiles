@@ -1,12 +1,3 @@
 alias reload!='. ~/.zshrc'
 alias c='clear'
 alias be='bundle exec'
-
-alias apps='cd ~/code/zendesk/apps'
-alias carson='cd ~/code/zendesk/zendesk_carson'
-alias classic='cd ~/code/zendesk/zendesk'
-alias console='cd ~/code/zendesk/zendesk_console'
-alias zaf='cd ~/code/zendesk/zendesk_app_framework'
-alias app_framework='cd ~/code/zendesk/zendesk_app_framework'
-alias zam='cd ~/code/zendesk/zendesk_app_market'
-alias app_market='cd ~/code/zendesk/zendesk_app_market'

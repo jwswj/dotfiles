@@ -5,9 +5,6 @@
 [push]
   default = upstream
 
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
-
 [core]
   excludesfile = ~/.gitignore
   editor = vim
@@ -45,11 +42,3 @@
 
 [branch]
   autosetuprebase = always
-
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
