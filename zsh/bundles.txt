@@ -1,0 +1,9 @@
+# this block is in alphabetic order
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+
+
+# these should be at the end
+frmendes/geometry
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search

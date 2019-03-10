@@ -1,8 +1,11 @@
+# shortcut to this dotfiles path is $DOTFILES
+export DOTFILES="$HOME/.dotfiles"
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/code
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -21,6 +24,9 @@ for file in ${(M)config_files:#*/path.zsh}
 do
   source $file
 done
+
+# load antibody plugins
+source ~/.zsh_plugins.sh
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
