@@ -5,9 +5,6 @@
 [push]
   default = upstream
 
-[pull]
-  rebase = preserve
-
 [core]
   excludesfile = ~/.gitignore
   editor = vim
