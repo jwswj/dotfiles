@@ -144,6 +144,8 @@ install_dotfiles
 if ! command -v brew ; then
   echo -e "\\n› Installing Homebrew"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+  success 'Homebrew is already installed'
 fi
 
 echo ''
