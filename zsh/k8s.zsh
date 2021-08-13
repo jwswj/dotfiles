@@ -1,0 +1,5 @@
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+alias kc="kubectl"
+alias kns="kubens"
+alias kctx="kubectx"
+alias kcsudo="kubectl --as admin --as-group system:masters"

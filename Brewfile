@@ -21,6 +21,9 @@ brew 'node'
 # golang
 brew 'go'
 
+# kubernetes
+brew 'kubectx' # fast switching between clusters
+
 # casks
 cask 'google-chrome'
 cask 'atom'
