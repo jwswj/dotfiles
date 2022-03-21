@@ -1,9 +1,9 @@
-[user]
-  name = Jason Smale
-  email = jsmale@zendesk.com
+# Local/private config goes in the include
+[include]
+  path = ~/.gitconfig.local
 
 [push]
-  default = upstream
+  default = simple
 
 [core]
   excludesfile = ~/.gitignore
