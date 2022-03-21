@@ -1,16 +1,14 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/fonts'
+tap 'homebrew/versions'
 tap 'kaos/shell'
-tap 'getantibody/tap'
 
 brew 'coreutils'
 brew 'zsh'
-brew 'mas'
-brew 'antibody'
-brew 'fasd'
+
+# Load .env into environment variables
 brew 'direnv'
 
 brew 'wget'
@@ -22,13 +20,12 @@ brew 'node'
 brew 'go'
 
 # kubernetes
-brew 'kubectx' # fast switching between clusters
+# brew 'kubectx' # fast switching between clusters
 
 # casks
-cask 'google-chrome'
-cask 'atom'
 cask 'visual-studio-code'
 cask 'spectacle'
-cask 'postgres'
+cask 'evernote'
+cask 'spotify'
 
 cask 'iterm2'
