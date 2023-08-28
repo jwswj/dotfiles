@@ -39,9 +39,13 @@
   ls = ls-files
   ign = ls-files -o -i --exclude-standard
   delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
+  recent = "!git branch --sort=-committerdate | head -n25"
+  pushf = push --force-with-lease
 
 [branch]
   autosetuprebase = always
 
 [help]
   autocorrect = 1
+[init]
+	defaultBranch = main
