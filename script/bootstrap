@@ -143,7 +143,7 @@ install_dotfiles
 # Let's install and setup homebrew.
 if ! command -v brew ; then
   info 'Installing Homebrew'
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   success 'Homebrew installed'
 else
   success 'Homebrew is already installed'
