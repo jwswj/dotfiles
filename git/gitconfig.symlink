@@ -4,6 +4,7 @@
 
 [push]
   default = simple
+  autoSetupRemote = true
 
 [core]
   excludesfile = ~/.gitignore
@@ -28,7 +29,6 @@
   plre = pull --rebase
   st = status
   out = log origin..HEAD
-  st = status
   ci = commit
   co = checkout
   cp = cherry-pick
